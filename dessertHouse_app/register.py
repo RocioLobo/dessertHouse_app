@@ -3,7 +3,26 @@
 
 import reflex as rx
 
-def register_page():
-    return rx.center(
-        rx.text("Página de registro", font_size="2xl")
+def RegisterPage():
+    return rx.box(
+        rx.text(
+            "Crear una Cuenta",
+            font_size="2xl",
+            font_weight="bold",
+            margin_bottom="1em",
+        ),
+        rx.input(placeholder="Nombre", margin_bottom="1em", width="300px"),
+        rx.input(placeholder="Correo Electrónico", margin_bottom="1em", width="300px"),
+        rx.input(placeholder="Contraseña", type="password", margin_bottom="1em", width="300px"),
+        rx.button(
+            "Registrarse",
+            on_click=lambda: print("Usuario registrado"),
+            background="green",
+            color="white",
+            padding="1em",
+            border_radius="8px",
+        ),
+        align="center",
+        justify="center",
+        height="100vh",
     )

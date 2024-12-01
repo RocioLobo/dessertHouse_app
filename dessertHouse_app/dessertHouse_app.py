@@ -1,26 +1,21 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 
 import reflex as rx
+from dessertHouse_app.home import HomePage  # Importa la pantalla de inicio
+from dessertHouse_app.login import LoginPage  # Importa la pantalla de login
+from dessertHouse_app.register import RegisterPage  # Importa la pantalla de registro
 
-from home import home_page  
-from login import login_page
-from register import register_page
-
-# Define las rutas de la aplicación
+# Define las rutas de las páginas
 def index():
-    return home_page()
+    return HomePage()
 def index():
-    return login_page()
+    return LoginPage()
 def index():
-    return register_page()
+    return RegisterPage()
 
-
-# Configura la aplicación
+# Inicializamos la aplicación
 app = rx.App()
-app.add_page(index, route="/")  # Página principal
+app.add_page(index, route="/")           # Ruta principal
+app.add_page(LoginPage, route="/login")  # Ruta para la pantalla de login
+app.add_page(RegisterPage, route="/register")  # Ruta para registro
 app.compile()
-
-
-# Inicializamos la app
-app = rx.App()
-app.add_page(index)
