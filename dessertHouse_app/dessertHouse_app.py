@@ -1,6 +1,7 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 
 import reflex as rx
+
 from home import home_page  
 from login import login_page
 from register import register_page
