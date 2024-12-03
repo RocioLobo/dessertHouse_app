@@ -2,9 +2,7 @@
 
 import reflex as rx
 
-
 # Definimos la pantalla de inicio
-import reflex as rx
 
 def HomePage():
     return rx.box(
@@ -14,14 +12,14 @@ def HomePage():
             font_weight="bold",
             margin_bottom="1em",
         ),
-        rx.image(
-            src="https://trello.com/c/k22u9Xhf/17-crear-mi-logo-de-mi-app",  # Cambia este archivo por tu logo si lo tienes
-            width="200px",
-            margin_bottom="1em",
-        ),
+        # rx.image(
+        #     src=rx.image(src="/logo.png"),  
+        #     width="200px",
+        #     margin_bottom="1em",
+        # ),
         rx.button(
             "Registrarse",
-            on_click=rx.route("/register"),
+            #on_click=rx.route.register("/register"),
             background="green",
             color="white",
             padding="1em",
@@ -30,7 +28,7 @@ def HomePage():
         ),
         rx.button(
             "Iniciar Sesión",
-            on_click=rx.route("/login"),
+            #on_click=rx.route.login("/login"),
             background="blue",
             color="white",
             padding="1em",
