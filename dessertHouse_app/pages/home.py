@@ -4,38 +4,39 @@ import reflex as rx
 
 # Definimos la pantalla de inicio
 
-def HomePage():
+def homepage():
     return rx.box(
         rx.text(
-            "¡Bienvenido a Dessert House!",
+            "¡Bienvenido a DessertHouse!",
             font_size="3xl",
             font_weight="bold",
             margin_bottom="1em",
+            color="black",
         ),
         # rx.image(
-        #     src=rx.image(src="/logo.png"),  
+        #     src=rx.image(src="/logo.https://trello.com/1/cards/672e49f8b0bb11b91a971201/attachments/674483f200f7d2fffd17848b/previews/674483f300f7d2fffd1787c2/download/Dessert.webp"),  
         #     width="200px",
         #     margin_bottom="1em",
         # ),
         rx.button(
             "Registrarse",
-            #on_click=rx.route.register("/register"),
+            # on_click=rx.route.register("/register"),
             background="green",
-            color="white",
+            color="black",
             padding="1em",
             margin_bottom="1em",
             border_radius="8px",
         ),
         rx.button(
             "Iniciar Sesión",
-            #on_click=rx.route.login("/login"),
+            # on_click=rx.route.login("/login"),
             background="blue",
-            color="white",
+            color="black",
             padding="1em",
             border_radius="8px",
         ),
         align="center",
         justify="center",
         height="100vh",
-        background="linear-gradient(to bottom, #f9d423, #ff4e50)",
+        background="linear-gradient(to bottom,#f70071 )",
     )
