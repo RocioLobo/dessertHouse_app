@@ -3,7 +3,7 @@
 
 import reflex as rx
 
-def registerpage():
+def registerpage()-> rx.Component:
     return rx.box(
         rx.text(
             "Crear una Cuenta",
@@ -25,4 +25,5 @@ def registerpage():
         align="center",
         justify="center",
         height="100vh",
+        spacing="4"
     )

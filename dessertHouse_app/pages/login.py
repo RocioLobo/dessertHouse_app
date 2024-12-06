@@ -3,7 +3,7 @@
 import reflex as rx
 
 
-def loginpage():
+def loginpage()->rx.Component:
     return rx.box(
         rx.text(
             "Iniciar Sesión",
@@ -16,12 +16,13 @@ def loginpage():
         rx.button(
             "Iniciar Sesión",
             # on_click=lambda: print("Usuario autenticado"),
-            background="blue",
-            color="white",
+            background="white",
+            color="black",
             padding="1em",
             border_radius="8px",
         ),
         align="center",
         justify="center",
         height="100vh",
+        spacing="4"
     )
