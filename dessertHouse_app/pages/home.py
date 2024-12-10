@@ -28,17 +28,17 @@ def homepage()-> rx.Component:
     #     #     width="200px",
     #     #     margin_bottom="1em",
     #     # ),
-    #     rx.vstack(
-    #         rx.button(
-    #         "Registrarse",
-    #         # on_click=rx.route.register("/register"),
-    #         background="white",
-    #         color="black",
-    #         padding="1em",
-    #         margin_bottom="1em",
-    #         border_radius="8px",
-    #         aling="center",
-    #         ),
+rx.vstack(
+    rx.button(
+        "Registrarse",
+            # on_click=rx.route.register("/register"),
+            background="white",
+            color="black",
+            padding="1em",
+            margin_bottom="1em",
+            border_radius="8px",
+            aling="center",
+ ),
     #         rx.button(
     #             "Iniciar Sesión",
     #             # on_click=rx.route.login("/login"),
