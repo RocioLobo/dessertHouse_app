@@ -2,7 +2,7 @@
 
 import reflex as rx
 
-def languagepage():
+def languagepage()->rx.component:
     return rx.Box(
         children=[
             rx.Text("Idioma / Language", font_size="20px", font_weight="bold", margin_bottom="20px"),
