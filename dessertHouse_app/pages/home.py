@@ -6,14 +6,15 @@ import reflex as rx
 
 def homepage()-> rx.Component:
     return rx.box(
-        rx.container(
-            rx.heading(
-                rx.text("¡Bienvenido a DessertHouse!"),
-                align="center",
-                color="#000000"
-            ),
-        )
+        rx.text("¡Bienvenido a DessertHouse!"),
+        rx.container,
+        rx.heading("App contador"),
+        size="4",
+        align="center",
+        color="#000000",
     )
+        
+    
     #     rx.text(
     #         "¡Bienvenido a DessertHouse!",
     #         font_size="3xl",
@@ -28,17 +29,17 @@ def homepage()-> rx.Component:
     #     #     width="200px",
     #     #     margin_bottom="1em",
     #     # ),
-rx.vstack(
-    rx.button(
-        "Registrarse",
-            # on_click=rx.route.register("/register"),
-            background="white",
-            color="black",
-            padding="1em",
-            margin_bottom="1em",
-            border_radius="8px",
-            aling="center",
- ),
+# rx.vstack(
+#     rx.button(
+#         "Registrarse",
+#             # on_click=rx.route.register("/register"),
+#             background="white",
+#             color="black",
+#             padding="1em",
+#             margin_bottom="1em",
+#             border_radius="8px",
+#             aling="center",
+#  ),
     #         rx.button(
     #             "Iniciar Sesión",
     #             # on_click=rx.route.login("/login"),
